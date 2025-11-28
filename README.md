@@ -1,12 +1,48 @@
-# React + Vite
+💎 Jewellery Management System — React + Vite + Node.js + MongoDB
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack Jewellery Management System built with React + Vite on the frontend and Node.js + Express + MongoDB on the backend.
+This system helps manage jewellery products, categories, stock, customers, sales, and admin operations.
 
-Currently, two official plugins are available:
+Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Frontend:
+  React (UI)
+  Vite (Fast bundler with HMR)
+  Tailwind CSS / Bootstrap (optional)
+  Axios / Fetch API for backend communication
+  
+Backend:
+  Node.js
+  Express.js
+  JWT Authentication
+  Bcrypt for password hashing
+Database:
 
-## Expanding the ESLint configuration
+  MongoDB (NoSQL database)
+  Mongoose (ODM for modeling schema)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Main Features::
+
+Admin Panel:
+    Add / Edit / Delete Jewellery Products
+    Manage Categories (Gold, Diamond, Silver, Platinum etc.)
+    Upload product images
+    Track inventory and stock levels
+    View sales history
+    Generate reports (Daily / Weekly / Monthly)
+
+User Panel:
+    Browse jewellery items
+    Search & Filter
+    Add to Cart
+    Purchase / Checkout
+    User Authentication (JWT-based)
+
+Database (MongoDB) Features:
+    Jewellery Product Schema
+    Category Schema
+    User Schema
+    Orders / Sales Schema
+    Images stored via:
+        Cloudinary (recommended)
+        Or locally in server
